@@ -1,0 +1,178 @@
+/**all**/
+#index .ui-header .ui-title,#index .ui-footer .ui-title,#list .ui-header .ui-title,#list .ui-footer .ui-title,#conv .ui-header .ui-title,#conv .ui-footer .ui-title {
+font-size: 1em;
+min-height: 1.1em;
+text-align: left;
+display: block;
+margin: 0 0 0 42px;
+padding: 1.2em 0 0;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: normal;
+outline: 0!important;
+}
+#list .ui-listview>.ui-li-static,#list .ui-listview>.ui-li-divider,#list .ui-listview>li>a.ui-btn{
+	white-space:normal;
+}
+#index .ui-header,#list .ui-header,#conv .ui-header{
+	color:#003399;
+	background:#e3e3e3 url('../images/merck_millipore.gif') no-repeat top left;
+	border:0;
+	background-size:42px 40px;
+}
+#index,#list,#conv{
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right top,
+		color-stop(0, #EBEBEB),
+		color-stop(0.17, #FEFEFE)
+	);
+	background-image: -o-linear-gradient(top, #EBEBEB 0%, #FEFEFE 17%);
+	background-image: -moz-linear-gradient(top, #EBEBEB 0%, #FEFEFE 17%);
+	background-image: -webkit-linear-gradient(top, #EBEBEB 0%, #FEFEFE 17%);
+	background-image: -ms-linear-gradient(top, #EBEBEB 0%, #FEFEFE 17%);
+	background-image: linear-gradient(to top, #EBEBEB 0%, #FEFEFE 17%);
+}
+.ui-header img{
+	width:2rem;	
+}
+.divider{
+	height:1.5em;
+	background:#003399;
+}
+#submit,div.ui-btn{
+	width:60%;
+	margin:0 auto;
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right top,
+		color-stop(0, #18C1FE),
+		color-stop(0.82, #13A1D9)
+	);
+	background-image: -o-linear-gradient(top, #18C1FE 0%, #13A1D9 82%);
+	background-image: -moz-linear-gradient(top, #18C1FE 0%, #13A1D9 82%);
+	background-image: -webkit-linear-gradient(top, #18C1FE 0%, #13A1D9 82%);
+	background-image: -ms-linear-gradient(top, #18C1FE 0%, #13A1D9 82%);
+	background-image: linear-gradient(to top, #18C1FE 0%, #13A1D9 82%);
+	border: 1px rgb(14,134,193) solid;
+}
+#conv p,#conv h2,#list  li{
+	font-size:14px;
+}
+#list .ui-header a:hover,#list .ui-header a:active,#conv .ui-header a:hover,#conv .ui-header a:active{
+	background-color:transparent;
+}
+.ui-header a img{
+	height:1.5em;
+	margin-left:1em;
+}
+/**会议详情**/
+#conv p,#conv h2{
+	line-height:1.7em;
+	text-indent:2em;
+	font-weight:normal;
+}
+/**所有会议**/
+#list  li{
+	padding-left:2rem;
+	padding-right:2rem;
+	background-color:transparent;
+	border-top:0;
+	border-bottom:1px solid #ddd;
+}
+#list li.active{
+	background:url(../images/bull.png) no-repeat 1em 1em;
+	background-size:14px;
+}
+#list li.active:after{
+	content:"请速注册参加会议";
+	color:#c00;
+}
+#list  li>a{
+	background-color:transparent;
+	color:#999;
+	border:0;
+	padding-left:0;
+	padding-right:0;
+	font-weight:normal;
+}
+#list li.active>a{
+	color: rgb(63,63,63);
+}
+#list li.active:active{
+	background-color: rgba(220,220,220, 0.5);
+}
+#list li>a:after{
+	background:none;
+}
+#list  li span{
+	display:block;
+	color:#24d2fe;
+	margin-bottom:.7em;
+}
+#list li.more{
+	border:none;
+	padding:1rem 0;
+}
+#list li.more a{
+	background:url('../images/more.png') no-repeat center;
+	background-size:contain;
+}
+/**会议申请**/
+#index{
+	padding: 0;
+}
+#index form{
+	margin:0 auto;
+}
+form legend{
+	margin:0 auto 3rem;
+}
+form .fieldcontainer{
+	text-indent:.5em;
+	margin-top:.9em;
+}
+form .fieldcontainer lable{
+	color:#6a6a6a;
+}
+form .fieldcontainer lable span{
+	color:#c00;
+}
+form .fieldcontainer input{
+	padding-left:35px;
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		right top,
+		color-stop(0, #EBEBEB),
+		color-stop(0.62, #FEFEFE)
+	);
+	background-image: -o-linear-gradient(top, #EBEBEB 0%, #FEFEFE 62%);
+	background-image: -moz-linear-gradient(top, #EBEBEB 0%, #FEFEFE 62%);
+	background-image: -webkit-linear-gradient(top, #EBEBEB 0%, #FEFEFE 62%);
+	background-image: -ms-linear-gradient(top, #EBEBEB 0%, #FEFEFE 62%);
+	background-image: linear-gradient(to top, #EBEBEB 0%, #FEFEFE 62%);
+	box-shadow:1px 1px 1px #ddd;
+	-webkit-box-shadow:1px 1px 1px #ddd;
+}
+#name{
+	background:url('../images/personal.png') no-repeat;
+}
+#company{
+	background:url('../images/home.png') no-repeat;
+}
+#tel{
+	background:url('../images/tel.png') no-repeat;
+}
+#name,#company,#tel{
+	background-size: 30px 28px;
+	background-position: 3px 3px;
+}
+#index .ui-btn{
+	margin-top:4rem;
+}
+.center{
+	text-align:center;	
+}

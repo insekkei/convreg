@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>会议注册</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" /> 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <div data-role="page" id="index" data-shadow="false">
+	    <div data-role="header">
+                    <h1> 2014"创新成就无限可能"新品发布会</h1>
+                    <div class="divider">
+                        <a href="javascript:history.go(-1);" title="back"><img src="images/back.png"></a>
+                    </div>
+                </div>
+
+	    <div data-role="content">
+		    <form action="success.html" method="post">
+			  <legend>与会注册</legend>
+			  <div class="fieldcontainer">
+				<lable for="name">姓名<span>*</span></label>
+				<input type="text" id="name" name="name"  required="required" />
+			  </div>
+			  <div class="fieldcontainer">
+				<lable for="company">单位<span>*</span></label>
+				<input type="text" id="company" name="company"  required="required" />
+			  </div>
+			  <div class="fieldcontainer">
+				<lable for="tel">电话<span>*</span></label>
+				<input type="tel" id="tel" name="tel"  required="required" />
+			  </div>
+			  <input type="submit" id="submit" value="提  交" data-shadow="false" />
+			</form>
+	    </div>
+      </div>
+  </body>
+</html>
